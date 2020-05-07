@@ -1,0 +1,13 @@
+base: ubuntu:16.04
+language: python
+targets:
+  - name: snakemailsendssl
+    version: "2.7"
+    harness:
+      function: send_ssl
+      file: SnakeMail.py
+  - name: snakemailsendplain
+    version: "2.7"
+    harness:
+      function: send_plain
+      file: SnakeMail.py
